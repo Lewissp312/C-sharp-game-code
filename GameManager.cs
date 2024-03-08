@@ -107,22 +107,6 @@ public class GameManager : MonoBehaviour
         Invoke("SpawnEnemy",enemySpawnRate);
     }
 
-    // void SpawnEnemy(){
-    //     enemySelectedDirection=ChooseDirection();
-    //     randNum=Random.Range(0,3);
-    //     if (enemySelectedDirection==Direction.Top){
-    //         Quaternion rotation=Quaternion.Euler(0,-180,0);
-    //         GameObject drone = Instantiate(enemies[randNum],GenerateSpawn(enemySelectedDirection,enemies[randNum]),enemies[randNum].transform.rotation);
-    //         drone.transform.Rotate(0f,-180f,0);
-    //     } else if (enemySelectedDirection==Direction.Left){
-    //         GameObject drone = Instantiate(enemies[randNum],GenerateSpawn(enemySelectedDirection,enemies[randNum]),enemies[randNum].transform.rotation);
-    //         drone.transform.Rotate(0f,90f,0);
-    //     } else{
-    //         GameObject drone = Instantiate(enemies[randNum],GenerateSpawn(enemySelectedDirection,enemies[randNum]),enemies[randNum].transform.rotation);
-    //         drone.transform.Rotate(0f,-90f,0);
-    //     }
-    //     Invoke("SpawnEnemy",enemySpawnRate);
-    // }
 
     void SpawnTree(){
         // treeSelectedDirection=Direction.Top;
@@ -191,15 +175,6 @@ public class GameManager : MonoBehaviour
         powerUpSelectedDirection=ChooseDirection();
         randNum=Random.Range(0,3);
         Instantiate(powerUps[randNum],GenerateSpawn(powerUpSelectedDirection,powerUps[randNum]),powerUps[randNum].transform.rotation);
-        // Quaternion rotation;
-        // if (powerUpSelectedDirection==Direction.Top){
-        //     rotation=Quaternion.Euler(0,-180,0);
-        // } else if(powerUpSelectedDirection==Direction.Left){
-        //     rotation=Quaternion.Euler(0,90,0);
-        // } else{
-        //     rotation=Quaternion.Euler(0,-90,0);
-        // }
-        // Instantiate(powerUps[randNum],GenerateSpawn(powerUpSelectedDirection,powerUps[randNum]),rotation);
     }
 
     void IncreaseSpawnRate(){
@@ -212,15 +187,6 @@ public class GameManager : MonoBehaviour
         powerUpSelectedDirection=ChooseDirection();
         randNum=Random.Range(0,3);
         Instantiate(powerUps[randNum],GenerateSpawn(powerUpSelectedDirection,powerUps[randNum]),powerUps[randNum].transform.rotation);
-        // Quaternion rotation;
-        // if (powerUpSelectedDirection==Direction.Top){
-        //     rotation=Quaternion.Euler(0,-180,0);
-        // } else if(powerUpSelectedDirection==Direction.Left){
-        //     rotation=Quaternion.Euler(0,90,0);
-        // } else{
-        //     rotation=Quaternion.Euler(0,-90,0);
-        // }
-        // Instantiate(powerUps[randNum],GenerateSpawn(powerUpSelectedDirection,powerUps[randNum]),rotation);
     }
 
     public void UpdateScore(int numToAdd){
