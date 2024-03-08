@@ -10,7 +10,6 @@ public class PowerUps : MonoBehaviour
     void Start()
     {
         gameManager=GameObject.Find("Game Manager").GetComponent<GameManager>();
-        // enemy=GameObject.FindGameObjectWithTag("Enemy").GetComponent<Enemy>();
         direction=gameManager.powerUpSelectedDirection;
     }
 
