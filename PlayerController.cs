@@ -66,8 +66,6 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         if (other.gameObject.CompareTag("Enemy")){
-            // explosion.transform.position=transform.position;
-            // explosion.Play();
             ParticleSystem explosionMod=Instantiate(explosion,transform.position,explosion.transform.rotation);
             explosionMod.Play();
             StartCoroutine(WaitForExplosion(explosionMod));
