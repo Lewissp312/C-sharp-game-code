@@ -57,10 +57,4 @@ public class Tree : MonoBehaviour
             }
         }
     }
-
-    // IEnumerator IncreaseSpeed(){
-    //     yield return new WaitForSeconds(15);
-    //     speed+=1;
-    //     StartCoroutine(IncreaseSpeed());
-    // }
 }
